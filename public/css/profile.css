@@ -1,0 +1,82 @@
+.prof_page_btn{
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+}
+.prof_page_btn{
+    background-color: rgb(250, 250, 250);
+}
+
+.prof_page_btn:active{
+    background-color: white;
+}
+.profile_info_container{
+    width: 80vw;
+    height: 20vw;
+    margin: 5vh auto;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: "profile_info likes";
+    grid-gap: 1vw;
+}
+
+
+@media (max-width:1000px) {
+    
+    .profile_info_container{
+    width: 80vw;
+    height: 60vw;
+
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "profile_info"
+                         "likes";
+
+    }
+
+}
+
+.profile_info_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+}
+
+.profile_info_cont table{
+    vertical-align: middle;
+    text-align: left;
+}
+
+.profile_info_img img{
+    width: 60%;
+}
+
+.profile_info_profile{
+    grid-area: profile_info;
+    border-radius: 15px;   
+}
+
+.profile_info_change_pw{
+    display: none;
+}
+
+.profile_info_change_pw input{
+    display: block;
+}
+
+.profile_info_likes{
+    grid-area: likes;
+    border-radius: 15px;
+}
+
+
+footer{
+    margin-top: 100vh;
+}
+

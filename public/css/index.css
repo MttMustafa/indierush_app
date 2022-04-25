@@ -1,0 +1,209 @@
+.index .carousel-wrap{
+    width: 100vw;
+    height: 55vw;   
+}
+
+.carousel-wrap img{
+    width: 100%;
+    height: 100%;
+}
+
+.index .crsl_prev{
+    top: 23vw;
+}
+
+
+.index .crsl_next{
+    top: 23vw;
+}
+
+.promot_card{
+    margin: 5vh auto;
+    width: 80vw;
+    height: 15vh;
+    text-align: center;
+    font-size: 2vw;
+    color: whitesmoke;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) ,#001D3D ), url('../img/posters/valheim/vh3.jpg') no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05vw;
+    border-radius: 15px;
+    user-select: none;
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+.promot_card:hover{
+    filter: drop-shadow(0px 0px 20px rgb(88, 87, 87));
+}
+
+.promot_card h1{
+    display: inline-block;
+}
+
+.promot_card img{
+    filter: invert(1);
+    width: 3vw;
+}
+
+.product_showcase_grid{
+    margin: auto;
+    width: 80vw;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    box-sizing: border-box;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.showcase_card{ 
+    background-color: cadetblue;
+    position: relative;
+    transition: 0.3s ease-out;
+}
+
+.showcase_card:hover{ 
+    filter: drop-shadow(0px 0px 20px rgb(88, 87, 87));
+}
+
+.showcase_card:hover .product_topbar{
+    opacity: 1;
+    transition: opacity 0.45s;
+}
+
+.showcase_bigger_card{
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+@media (max-width: 800px) {
+    .product_showcase_grid{
+        height: 160vw;
+        width: 80vw;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .product_carousel_window{
+        height: 138px !important;
+        width: 300px !important;
+    }
+    .product_carousel_container{
+        height: 138px !important;
+    }
+    .slide_back{
+        height: 138px !important;
+    }
+    
+    .slide_foward{
+        height: 138px !important;
+    }
+    .slide_btn{
+        margin-top: 6vh !important;
+    }    
+}
+
+.showcase_card{
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.showcase_card img{
+    height: 100%;
+    width: auto;
+}
+
+.showcase_card_desc{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    opacity: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    transition: opacity 0.1s;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    transition: 0.3s ease-out;
+}
+
+.showcase_card:hover .showcase_card_desc{
+    opacity: 0.8;
+}
+
+.product_carousel{
+    margin: 5vh auto;
+}
+
+.index_content_end{
+    margin: 5vh auto;
+    width: 80vw;
+    height: 15vh;
+    text-align: center;
+    font-size: 2vw;
+    color: whitesmoke;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) ,#001D3D ), url('../img/posters/ori/ori2.jpg') no-repeat;
+    transition: 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.05vw;
+    border-radius: 15px;
+    user-select: none;
+    opacity: 1;
+}
+
+.index_content_end:hover{
+    filter: drop-shadow(0px 0px 20px rgb(88, 87, 87));
+}
+
+
+.product_carousel_container{
+    width: 80vw;
+    height: 215px;
+    max-height: 215px;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: auto;
+    flex-direction: row;
+}
+
+.slide_back{
+    position: absolute;
+    height: 215px;
+    left: 10vw;
+    box-sizing: border-box;
+}
+
+.slide_foward{
+    position: absolute;
+    height: 215px;
+    right: 10vw;
+    box-sizing: border-box;
+}
+
+.slide_btn{
+    margin-top: 9.2vh;
+}
+
+
+.product_carousel_window{
+    height: 215px;
+    width: 460px;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    margin: 0 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product_carousel_window img{
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}

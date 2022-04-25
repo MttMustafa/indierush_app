@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="shortcut icon" href="../img/icons/favicon-32x32.png" type="image/x-icon">
+    <title>IndieRush - Document</title>
+</head>
+<body class="profile">
+    {{>header}}
+    <div class="nav_filler"></div>
+
+    <section>
+        <div class="profile_info_container">
+            <div class="profile_info_cont profile_info_profile">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="profile_info_img"><img src="../img/icons/user(big).png" alt=""></div>
+                        </td>
+                        <td>
+                            <div class="profile_info_change_pw">
+                            <div><input class="change_pw_old" placeholder="Old Password" type="password"></div>
+                            <br>
+                            <div><input class="change_pw_new" placeholder="New Password" type="password"></div>
+                            <br>
+                            <div><input class="change_pw_repeat" placeholder="New Password" type="password"></div>
+                            <br>
+                            <div><button class="prof_page_btn change_pw_btn">Change Password</button></div>
+                            <br>
+                            <a class="go_back_link" href="#"><< Go Back</a>
+                            </div>
+                            <div class="profile_info_name_view">
+                                <p id="profile_name"></p>
+                                <br>
+                                <div><button class="prof_page_btn logout_btn">Log-Out</button></div>
+                                <br>
+                                <a class="change_password_link" href="#">Change password</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="profile_info_cont profile_info_likes">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="profile_info_img"><img src="../img/icons/like(big).png" alt=""></div>
+                        </td>
+                        <td>
+                            <h1>Like Count</h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+   {{>footer}}
+<script src="../js/profile.js"></script>
+</body>
+</html>

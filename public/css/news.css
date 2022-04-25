@@ -1,0 +1,37 @@
+.news_block{
+    background-color: rgb(235, 235, 235);
+    width: 60vw;
+    overflow: scroll;
+    scrollbar-width: none;
+    height: 20vh;
+    margin: 20px auto 20px auto;
+    border-radius: 15px;
+    transition: 0.3s ease-out;
+}
+
+.news_block:hover{
+    filter: drop-shadow(0px 0px 5px rgb(66, 65, 65));
+    height: 87vh;
+}
+
+@media (max-width:1000px) {
+    .news_block{
+        width: 90vw;
+    }
+    h1{
+        margin-left: 5vw !important;
+    }
+    
+}
+
+.news_paragraph_ctn{
+    margin: 40px 0 0 40px;
+} 
+
+footer{
+    margin-top: 100vh;
+}
+
+h1{
+    margin-left: 20vw;
+}

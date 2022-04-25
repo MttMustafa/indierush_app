@@ -1,0 +1,129 @@
+h1{
+    margin-left: 9.6vw;
+}
+.genre_page_carousel-wrap{
+    position: relative;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.genre_page_carousel-wrap img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-grid{
+    
+    display: flex;
+    width: 80vw;
+    box-sizing: border-box;
+    margin: 40px auto;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    
+    /* margin: auto;
+    display: grid;
+    box-sizing: border-box;
+    padding: 5%;
+    width: 80vw;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 400px;
+    grid-gap: 30px; */
+}
+
+.product-cell{
+    width: 280px;
+    height: 400px;
+    flex-shrink: 0;
+    margin: 4vh 2vw;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+@media (max-width:800px) {
+    .product-cell{
+        width: 200px;
+        height: 284px;
+    }
+    h1{
+        font-size: 1.3em;
+        margin-left: 3.8vw;
+    }
+   .genre_page_carousel-wrap{
+       width: 90vw;
+       height: 50vw;
+   }
+   .bigger_img_wrap{
+       width: 337px !important;
+       height: 500px !important;
+   }
+
+}
+
+.cover-container{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.product-cell:hover{
+    filter: drop-shadow(0px 0px 20px rgb(88, 87, 87));
+}
+
+.product-cell:hover .product_topbar{
+    opacity: 1;
+    transition: opacity 0.45s;
+}
+
+
+.cover-container{
+    width: 100%;
+    height: 100%;
+}
+
+.product-cell img{
+    height: 100%;
+    width: 100%;
+}
+
+.product-cell_desc{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 10px 0 10px 25px;
+    width: 100%;
+    opacity: 0;
+    bottom: 0;
+    background-color: grey;
+    transition: opacity 0.1s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product-cell:hover .product-cell_desc{
+    opacity: 0.8;
+}
+
+.bigger_pic_container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 80%);
+    z-index: 1000;
+    display: flex;
+}
+
+.bigger_img_wrap{
+    width: 540px;
+    height: 800px;
+    margin: auto;
+}
+
+.bigger_img_wrap img{
+    width: 100%;
+    height: 100%;
+}

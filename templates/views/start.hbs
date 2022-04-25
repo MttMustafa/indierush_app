@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="../img/icons/favicon-32x32.png" type="image/x-icon">
+    <title>IndieRush - Login</title>
+</head>
+<body class="login_page">
+    {{>header}}
+    <div class="nav_filler"></div>
+    
+    <section>
+        <div class="form_container">
+            <!-- <div>
+                <span>Email</span>
+                <span><input type="email" name="" id=""></span>
+            </div>
+            <div>
+                <span>Password</span>
+                <span><input type="password" name="" id=""></span>
+            </div>
+             -->
+
+            <div class="login_form_wrap">
+                <h1>Login</h1>
+                <div><input type="email" placeholder="e-Mail" id="login_email_input"></div>
+                <div><input type="password" placeholder="Password" id="login_password_input"></div>
+                <div><button id="login_btn" type="submit"><span>Login</span></button></div>
+                <div><a href="#" id="signup_redirect"><span>> Don't have an account? Sign-up here!</span></a></div>
+            </div>
+
+
+            <div class="signup_form_wrap">
+                <h1>Sign-Up</h1>
+                <span><input type="text" placeholder="Name" id="name_input"></span>
+                <span><input type="text" placeholder="Last Name" id="lastname_input"></span>
+                <div><input type="email" placeholder="e-Mail" id="signup_email_input"></div>
+                <span><input type="password" placeholder="Password" id="signup_password_input"></span>
+                <span><input type="password" placeholder="Password" id="password_input_check"></span>
+                <span><button id="signup_btn" type="submit"><span>Create Account</span></button></span>
+                <div><a href="#" id="login_redirect"><span>> Already have and account? Login Here!</span></a></div>
+            </div>
+        </div>
+    </section>
+    
+<script src="../js/login.js"></script>
+<script src="../js/header.js"></script>
+</body>
+</html>

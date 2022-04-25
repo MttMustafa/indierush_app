@@ -1,0 +1,33 @@
+.form_container button{
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    background-color: rgb(250, 250, 250);
+}
+.form_container button:active{
+    background-color: white;
+}
+
+.form_container {
+    margin: 200px auto;
+    width: 380px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 5px 0 30px 35px;
+
+}
+
+.login_form_wrap{
+   box-sizing: border-box;
+   line-height: 2.5em;
+}
+
+
+.signup_form_wrap {
+    display: none;
+    box-sizing: border-box;
+    line-height: 2.5em;
+}
+
+
